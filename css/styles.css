@@ -262,7 +262,8 @@ background-position: center;
 }
 
 .works .title,
-.team .title {
+.team .title,
+.clients .title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
