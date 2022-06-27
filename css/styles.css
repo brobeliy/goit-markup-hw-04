@@ -5,8 +5,8 @@
   --main-color-project: #ffffff;
   --secondary-color-project: #2196f3;
   --background-second-color: #2f303a;
-  --section-background-color: #F5F4FA
-
+  --section-background-color: #F5F4FA;
+  --clients-color:#AFB1B8;
 }
 
 h1,h2,h3,h4,p,ul {
@@ -120,6 +120,10 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);}
 }
 
 .contacts-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--secondary-text-color);
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -127,6 +131,15 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);}
 .contacts-header:focus,
 .contacts-header:hover {
   color: var(--secondary-color-project);
+}
+
+.icon-contacts {
+  
+  fill: currentColor;
+margin-right: 10px;}
+
+.icon-contacts:focus,.icon-contacts:hover {
+  fill: var(--secondary-color-project);
 }
 
 /* CSS main HTML */
@@ -205,33 +218,6 @@ border-bottom: 1px solid rgba(236, 236, 236, 1);}
   color: var(--secondary-text-color);
 }
 
-.features .item {
-  width: 270px;
-}
-.features .item::before {
-content: "";
-display: block;
-width: 270px;
-height: 120px;
-background-color: var(--section-background-color);
-background-repeat: no-repeat;
-background-position: center;
-
-}
-
-.icon-detail::before {
-  background-image: url(../images/details.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-.icon-plan::before {
-  background-image: url(../images/plan.svg);
-}
-.icon-techo::before {
-  background-image: url(../images/tehno.svg);
-}
-
 .features .item + .item {
   margin-left: 30px;
 }
@@ -243,6 +229,14 @@ background-position: center;
   line-height: 1.14;
   color: var(--main-text-color);
 }
+
+.pic{
+  padding: 25px 100px;
+  cursor: pointer;
+  display: block;
+background-color: var(--section-background-color);
+margin-bottom: 30px;}
+
 
 /* what we do  */
 
@@ -285,6 +279,7 @@ background-color: var(--main-color-project);
 
 .team .list {
   display: flex;
+  justify-content: center;
 }
 
 .team .item + .item {
@@ -301,6 +296,76 @@ background-color: var(--main-color-project);
   line-height: 1.19;
   color: var(--secondary-text-color);
 }
+
+.list .item-social +.item-social{
+  margin-left:10px ;
+}
+
+.item-social {
+
+}
+.social-item-a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-color-project);
+color: var(--clients-color);
+border-radius: 50%;}
+
+.social-item-a:focus,.social-item-a:hover {
+  background-color: var(--secondary-color-project);
+}
+
+.icon-social-card
+{width: 20px;
+height: 20px;
+fill: currentColor;}
+
+.icon-social-card:focus,.icon-social-card:hover 
+{
+  fill: var(--main-color-project);
+}
+
+
+/* our clients */
+
+.clients .list { 
+  display: flex;
+justify-content: center;}
+
+.clients .item + .item {margin-left: 30px;}
+
+.item-company {
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  /* padding: 16px 32px; */
+  cursor: pointer;
+  border: 1px solid var(--clients-color);
+  border-radius: 4px;}
+
+.logo-company {
+  /* padding: 16px 32px; */
+  fill: var(--clients-color);
+}
+
+.item-company:focus,
+.item-company:hover{
+  border-color: var(--secondary-color-project);
+  color: var(--secondary-color-project);
+}
+
+.logo-company:focus, 
+.logo-company:hover
+ {
+  fill:var(--secondary-color-project);
+}
+
+
 
 /* CSS footer */
 
