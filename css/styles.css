@@ -239,6 +239,7 @@ header {
 
 .pic {
   padding: 25px 100px;
+  cursor: none;
   display: block;
   background-color: var(--section-background-color);
   margin-bottom: 30px;
