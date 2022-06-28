@@ -305,6 +305,7 @@ background-color: var(--main-color-project);
 
 }
 .social-item-a {
+  padding: 0;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -316,6 +317,7 @@ border-radius: 50%;}
 
 .social-item-a:focus,.social-item-a:hover {
   background-color: var(--secondary-color-project);
+  color: var(--main-color-project);
 }
 
 .icon-social-card
@@ -343,14 +345,13 @@ justify-content: center;}
   width: 170px;
   height: 92px;
   display: flex;
-  /* padding: 16px 32px; */
   cursor: pointer;
+  color: var(--clients-color);
   border: 1px solid var(--clients-color);
   border-radius: 4px;}
 
 .logo-company {
-  /* padding: 16px 32px; */
-  fill: var(--clients-color);
+  fill: currentColor;
 }
 
 .item-company:focus,
@@ -369,8 +370,13 @@ justify-content: center;}
 
 /* CSS footer */
 
+.footer {display: flex;}
+
+.foot-addres {
+  margin-right: 70px;
+}
+
 .logo-foot {
-  display: block;
   color: var(--main-text-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -387,6 +393,7 @@ justify-content: center;}
 
 .foot address {
   font-style: normal;
+
 }
 .textstudio {
   color: var(--main-color-project);
@@ -406,10 +413,64 @@ justify-content: center;}
 
 .foot .adress {
   color: var(--main-color-project);
+  display: inline-block;
+  text-align: center;
 }
 
 .list.adressa .item + .item {
   margin-top: 9px;
+}
+
+
+.foot .title { 
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color:var(--main-color-project);
+}
+
+.footer-social .item + .item {
+  margin-left: 10px;
+}
+
+.item-icon-a {
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+color:var(--main-color-project);
+border-radius: 50%;
+}
+
+.foot .icon {
+fill: currentColor;
+ }
+
+.footer-social {
+  display: inline-flex;
+}
+
+.socials {
+padding:0;
+margin:auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footer-social .item-icon {
+  width: 44px; ;
+  height: 44px; ;
+}
+
+.item-icon-a:focus,.item-icon-a:hover {
+  background-color: var(--secondary-color-project);
+  color: var(--main-color-project);
 }
 
 /* CSS main Portfolio */
@@ -441,6 +502,7 @@ justify-content: center;}
 .list-button button:focus {
   color: var(--main-color-project);
   background-color: var(--secondary-color-project);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-projects {
