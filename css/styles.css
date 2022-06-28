@@ -232,7 +232,6 @@ margin-right: 10px;}
 
 .pic{
   padding: 25px 100px;
-  cursor: pointer;
   display: block;
 background-color: var(--section-background-color);
 margin-bottom: 30px;}
